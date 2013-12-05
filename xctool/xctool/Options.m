@@ -29,6 +29,7 @@
 #import "XcodeBuildSettings.h"
 #import "XcodeSubjectInfo.h"
 #import "XcodeTargetMatch.h"
+#import "ExportAction.h"
 
 @implementation Options
 
@@ -41,6 +42,7 @@
            [TestAction class],
            [ArchiveAction class],
            [AnalyzeAction class],
+           [ExportAction class]
            ];
 }
 
