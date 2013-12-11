@@ -365,11 +365,11 @@
     self.project = targetMatch.projectPath;
     self.scheme = targetMatch.schemeName;
   };
-
-  if (self.scheme == nil) {
-    *errorMessage = @"Missing the required -scheme argument.";
-    return NO;
-  }
+  
+//  if (self.scheme == nil) {
+//    *errorMessage = @"Missing the required -scheme argument.";
+//    return NO;
+//  }
 
   if (self.workspace != nil && !isDirectory(self.workspace)) {
     *errorMessage = [NSString stringWithFormat:@"Specified workspace doesn't exist: %@", self.workspace];

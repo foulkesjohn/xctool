@@ -76,8 +76,7 @@ static NSDictionary *BuildConfigurationsByActionForSchemePath(NSString *schemePa
                                @"TestAction",
                                @"ArchiveAction",
                                @"ProfileAction",
-                               @"AnalyzeAction",
-                               @"ExportAction",
+                               @"AnalyzeAction"
                                ];
   NSMutableDictionary *results = [NSMutableDictionary dictionary];
 

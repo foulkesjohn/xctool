@@ -30,10 +30,11 @@
   NSMutableArray *arguments = [[options xcodeBuildArgumentsForSubject] mutableCopy];
   [arguments addObjectsFromArray: [options commonXcodeBuildArgumentsForSchemeAction: @"ExportAction"
                                                                    xcodeSubjectInfo: xcodeSubjectInfo]];
-  [arguments addObject: @"export"];
+  [arguments addObject: @"-exportArchive"];
   
   if (_exportPath) {
     [arguments addObjectsFromArray:@[@"-exportPath", _exportPath]];
+    [arguments addObjectsFromArray:@[@"-archivePath", _exportPath]];
   }
   
   if (_exportFormat) {
